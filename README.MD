@@ -1,7 +1,8 @@
 # Calculator Service
 
 ## Описание
-`Calculator Service` - это Spring Boot приложение, предоставляющее API для выполнения базовых математических операций, таких как сложение, вычитание, умножение и деление. Сервис логирует каждый вызов операций и возвращает результат.
+`Calculator Service` - это Spring Boot приложение, предоставляющее API для выполнения базовых математических операций, 
+таких как сложение, вычитание, умножение и деление. Сервис логирует каждый вызов операций и возвращает результат.
 
 ## Функциональность
 Сервис предоставляет следующие операции:
@@ -18,6 +19,36 @@
 - **Сложение:**
   ```http
   POST /api/calculator/sum
+  Content-Type: application/json
+
+  {
+      "a": 10,
+      "b": 5
+  }
+
+- **Вычитание:**
+  ```http
+  POST /api/calculator/subtract
+  Content-Type: application/json
+
+  {
+      "a": 10,
+      "b": 5
+  }
+
+- **Умножение:**
+  ```http
+  POST /api/calculator/multiply
+  Content-Type: application/json
+
+  {
+      "a": 10,
+      "b": 5
+  }
+
+- **Деление:**
+  ```http
+  POST /api/calculator/divide
   Content-Type: application/json
 
   {
