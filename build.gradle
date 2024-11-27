@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.4.6'
+    id 'org.springframework.boot' version '2.5.5'
     id 'io.spring.dependency-management' version '1.1.6'
 }
 
@@ -25,7 +25,7 @@ repositories {
 
 dependencies {
     //REST API
-    implementation 'org.springframework.boot:spring-boot-starter-web:2.4.6'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 
     //SOAP
     //implementation 'org.springframework.boot:spring-boot-starter-web-services'
